@@ -1,6 +1,7 @@
 # 🚀 Pulsar 
 **Rust-нативный мониторинг серверов с минимальными накладными расходами**  
 
+![PulsarLogo](image.jpeg)
 [![Rust Version](https://img.shields.io/badge/rustc-1.70+-blue.svg)](https://releases.rs/docs/1.70.0)
 
 > **⚠️ Alpha-версия**  
