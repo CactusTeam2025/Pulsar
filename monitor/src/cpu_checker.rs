@@ -1,4 +1,4 @@
-use sysinfo::{System, Component};
+use sysinfo::{System};
 use std::{thread, time::Duration};
 
 pub fn cpu_checker() {
