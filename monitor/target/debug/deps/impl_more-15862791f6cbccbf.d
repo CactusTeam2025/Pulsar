@@ -1,0 +1,12 @@
+/home/danila/Pulsar/monitor/target/debug/deps/libimpl_more-15862791f6cbccbf.rmeta: /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/lib.rs /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/as_ref.rs /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/deref.rs /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/display.rs /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/error.rs /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/from.rs
+
+/home/danila/Pulsar/monitor/target/debug/deps/libimpl_more-15862791f6cbccbf.rlib: /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/lib.rs /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/as_ref.rs /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/deref.rs /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/display.rs /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/error.rs /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/from.rs
+
+/home/danila/Pulsar/monitor/target/debug/deps/impl_more-15862791f6cbccbf.d: /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/lib.rs /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/as_ref.rs /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/deref.rs /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/display.rs /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/error.rs /home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/from.rs
+
+/home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/lib.rs:
+/home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/as_ref.rs:
+/home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/deref.rs:
+/home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/display.rs:
+/home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/error.rs:
+/home/danila/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/impl-more-0.1.9/src/from.rs:
