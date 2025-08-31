@@ -6,6 +6,11 @@ license = "Apache-2.0"
 
 [dependencies]
 sysinfo = "0.35.2"
-actix-web = "4"
-actix-rt = "2"
 serde = { version = "1.0", features = ["derive"] }
+teloxide = { version = "0.12", features = ["macros"] }
+tokio = { version = "1.0", features = ["full"] }
+dotenvy = "0.15"
+pretty_env_logger = "0.5.0"
+log = "0.4"
+cpu_lib = { path = "../cpu_lib" }
+memory_lib = { path = "../memory_lib"}

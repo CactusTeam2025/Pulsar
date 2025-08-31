@@ -1,1 +1,1 @@
-/home/danila/Pulsar/monitor/target/debug/monitor: /home/danila/Pulsar/monitor/src/cpu_checker.rs /home/danila/Pulsar/monitor/src/main.rs
+/home/danila/pulsar/monitor/target/debug/monitor: /home/danila/pulsar/cpu_lib/src/lib.rs /home/danila/pulsar/memory_lib/src/lib.rs /home/danila/pulsar/monitor/src/main.rs
