@@ -1,8 +1,0 @@
-[package]
-name = "pc_base_inf"
-version = "0.1.0"
-edition = "2024"
-
-[dependencies]
-sysinfo = "0.35.2"
-dotenvy = "0.15"
