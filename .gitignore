@@ -1,0 +1,11 @@
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+Cargo.lock
+
+dist/
+build/
+target/
