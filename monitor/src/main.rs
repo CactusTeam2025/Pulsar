@@ -5,8 +5,6 @@ use teloxide::dispatching::dialogue::GetChatId;
 //mod cpu_checker;
 use teloxide::prelude::*;
 use teloxide::utils::command::{self, BotCommands};
-use cpu_lib::*;
-use memory_lib::*;
 
 #[derive(BotCommands, Clone)]
 #[command(description = "Доступные команды:")]
@@ -14,7 +12,7 @@ enum Command {
     #[command(rename = "start", description = "начать работу с ботом")]
     Start,
     #[command(rename = "get_cpu_information", description = "получить данные CPU")]
-    getCpuInf,
+    GetCpuInf,
     #[command(rename = "cpu_check", description = "Проверить нагрузку CPU")]
     CheckCpu,
     #[command(rename = "memory_check", description = "Проверить Ram")]
@@ -54,25 +52,36 @@ async fn command_handler(bot: Bot, msg: Message, cmd: Command) -> ResponseResult
                 "🚀 Добро пожаловать!"
             ).await?;
         }
-        Command::getCpuInf => {
+        Command::GetCpuInf => {
             let cpu_info = cpu_lib::cpu_base_information_checker();
             let messsage = cpu_lib::format_cpu_information(&cpu_info);
-            bot.send_message(msg.chat.id, format!("💻 Информация о CPU: \n{}", messsage)).await?;
+            let get_name_pc = pc_base_inf::get_pc_Information();
+            let print_name = pc_base_inf::format_pc_name(&get_name_pc);
+
+            bot.send_message(msg.chat.id, format!("💻 Информация о CPU {}: \n{}", print_name, messsage)).await?;
         }
         Command::CheckCpu => {
             let cpu_usage = cpu_lib::get_cpu_usage();
+            let get_name_pc = pc_base_inf::get_pc_Information();
+            let print_name = pc_base_inf::format_pc_name(&get_name_pc);
             let message = cpu_lib::format_cpu_usage(&cpu_usage);
 
-            bot.send_message(msg.chat.id, format!("📊 Информация о нагрузке CPU (На момент запроса данных): \n{}", message)).await?;
+            bot.send_message(msg.chat.id, format!("📊 Информация о нагрузке CPU (На момент запроса данных) {}: \n{}", print_name, message)).await?;
         }
         Command::MemoryCheck => {
-            let memory_usage = memory_lib::memory_base_information_checker();
-            let message = memory_lib::format_detailed_memory_info(&memory_usage);
-            bot.send_message(msg.chat.id, format!("Память: \n{}", message)).await?;
+            let memory_usage = ram_inf::memory_base_information_checker();
+            let message = ram_inf::format_detailed_memory_info(&memory_usage);
+            let get_name_pc = pc_base_inf::get_pc_Information();
+            let print_name = pc_base_inf::format_pc_name(&get_name_pc);
+
+            bot.send_message(msg.chat.id, format!("Память {}: \n{}", print_name, message)).await?;
         }
         Command::RamCheck => {
-            let memory_usage = memory_lib::get_memory_usage();
-            bot.send_message(msg.chat.id, format!("Память: \n{:#?}", memory_usage)).await?;
+            let memory_usage = ram_inf::get_memory_usage();
+            let get_name_pc = pc_base_inf::get_pc_Information();
+            let print_name = pc_base_inf::format_pc_name(&get_name_pc);
+
+            bot.send_message(msg.chat.id, format!("Память {}: \n{:#?}", print_name, memory_usage)).await?;
         }
     }
     Ok(())
